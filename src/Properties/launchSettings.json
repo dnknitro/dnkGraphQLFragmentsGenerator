@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GraphQLFragmentsGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "--schema-file schema.graphql --output-folder src\\generated --operation-names Customer,User,SaveCustomer,SaveJob,SaveTruck,SavePersonnel,SaveUser,SaveWorkOrder,Manifest,SaveManifest,SaveSupplementalCharge,SaveInvoice"
+    }
+  }
+}
