@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Volodymyr Shcherbyna</Authors>
+    <PackageId>dnkGraphQLFragmentsGenerator</PackageId>
+    <RootNamespace>dnkGraphQLFragmentsGenerator</RootNamespace>
+    <AssemblyName>dnkGraphQLFragmentsGenerator</AssemblyName>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright></Copyright>
+    <RepositoryUrl>https://github.com/dnknitro/dnkGraphQLFragmentsGenerator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/dnknitro/dnkGraphQLFragmentsGenerator</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20303.1" />
+  </ItemGroup>
+
+</Project>
