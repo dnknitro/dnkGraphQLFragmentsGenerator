@@ -7,7 +7,16 @@ namespace dnkGraphQLFragmentsGenerator
 {
     internal class Program
     {
-        private static void Main(string schemaFile, string outputFolder, string operationNames, bool verbose = false,
+        /// <summary>
+        /// Extracts GraphQL Fragments from `--schema-file` using `--fragment-regex` regular expression and saves those into `--output-folder`
+        /// </summary>
+        /// <param name="schemaFile">Path to GraphQL schema file</param>
+        /// <param name="outputFolder">Path to base output folder</param>
+        /// <param name="operationNames">List of queries and mutations to generate</param>
+        /// <param name="verbose">Turns on verbose logging</param>
+        /// <param name="fragmentRegex">Regular expression to find fragments in schema file</param>
+        /// <param name="fragmentNameRegex">Regular expression to extract fragment name from --fragment-regex</param>
+        private static void Main(string schemaFile = "schema.graphql", string outputFolder = @"src/generated", string operationNames = "", bool verbose = false,
             string fragmentRegex = @"^type \w+Gql \{.+?\}$", 
             string fragmentNameRegex = @"^type (?:(\w+)Gql).*$"
             )
