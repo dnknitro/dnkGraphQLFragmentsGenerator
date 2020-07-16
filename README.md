@@ -1,0 +1,1 @@
+# dnkGraphQLFragmentsGenerator
